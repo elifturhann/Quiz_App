@@ -1,5 +1,6 @@
 from django.contrib import admin 
 from django.urls import path , include
+
  
 # Three modules for swagger:
 from rest_framework import permissions 
@@ -33,8 +34,12 @@ urlpatterns = [
     path("redoc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"), 
     path('__debug__/', include('debug_toolbar.urls')),
     
+    
     #apps
     path('users/', include('users.urls')),
     path('quiz/', include('quiz.urls')),
+
+    #...
+    path('_nested_admin/', include('nested_admin.urls')),
     
 ]
