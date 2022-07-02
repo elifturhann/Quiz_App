@@ -5,7 +5,7 @@ from .models import Category, Questions, Quizzes, Answers
 
 class AnswerInline(nested_admin.NestedTabularInline):
     model = Answers
-    # extra = 1
+    
 admin.site.register(Answers)
 class QuestionInline(nested_admin.NestedTabularInline):
     model = Questions
