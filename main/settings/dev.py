@@ -8,9 +8,9 @@ INSTALLED_APPS += THIRD_PARTY_APPS
  
 THIRD_PARTY_MIDDLEWARE = ["debug_toolbar.middleware.DebugToolbarMiddleware"] 
  
-MIDDLEWARE = []
+MIDDLEWARE += THIRD_PARTY_MIDDLEWARE 
 
-MIDDLEWARE.append(THIRD_PARTY_MIDDLEWARE) 
+
  
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases 
