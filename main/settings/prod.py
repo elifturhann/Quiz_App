@@ -13,4 +13,4 @@ DATABASES = {
         "ATOMIC_REQUESTS": True, 
     } 
 }
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [ 'quiz-app--django.herokuapp.com' ]
