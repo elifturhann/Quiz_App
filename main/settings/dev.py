@@ -32,4 +32,4 @@ INTERNAL_IPS = [
 ]
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'quiz-app--django.herokuapp.com' ]
+ALLOWED_HOSTS = ['*']
